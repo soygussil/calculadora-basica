@@ -1,0 +1,134 @@
+:root {
+    --fuente-principal: 'Quicksand', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente-principal);
+}
+
+body {
+    /* azulito bonito */
+    /* background: linear-gradient(to right, #00c6fb 0%, #005bea 100%); */
+    /* color manguito */
+    /* background: linear-gradient(to right, #e91e63 0%, #ffc107 100%); */
+    /* Colores chidos q hacen que cambie cada cierto tiempo tbh */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    ;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2rem;
+    color: #fff;
+}
+.cora{
+    color:firebrick;
+}
+.nombre{
+    color:black;
+    font-weight: bold;
+    text-shadow: solid 1px #192f00;
+}
+.container {
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    /* box-shadow: 0px 0px 43px 17px rgba(0,0,0,0.75);
+    border: 4px solid #ffffff; */
+    background-color: rgba(255, 255, 255, 0.05);
+    z-index: 10;
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+#display {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 30px 8px;
+    font-size: 25px;
+    /* background-color: rgb(255, 255, 255); */
+    overflow: hidden;
+    white-space: nowrap;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    padding-bottom: 100px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.buttons {
+    /* background-color: white; */
+    display: grid;
+    /* border-bottom: 1px solid #999;
+    border-left: 1px solid #999; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.buttons>div {
+    border-top: 1px solid rgba(153, 153, 153, 0.384);
+    border-right: 1px solid rgba(153, 153, 153, 0.384);
+}
+
+.button {
+    color: white;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#equal {
+    background: #555fff;
+    color: white;
+    border-bottom-right-radius: 20px;
+}
+
+.button:hover {
+    background-color: #ff8614;
+    color: #192f00;
+    transition: 0.4s ease-in-out;
+    border-radius: 10px;
+}
+
+.btn{
+    background-color: #ff861491;
+    backdrop-filter: blur(15px);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 45%;
+    margin-bottom: 50px;
+}
+
+
